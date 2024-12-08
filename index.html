@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Pages / Login - NiceAdmin Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: NiceAdmin
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Updated: Apr 20 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+<style>
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+  }
+  .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+  }
+  h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+  }
+  .table-responsive {
+      overflow-x: auto;
+  }
+  table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+  }
+  th, td {
+      padding: 12px;
+      text-align: center;
+      border: 1px solid #ddd;
+  }
+  th {
+      background-color: #f4f4f4;
+      color: #333;
+  }
+  td {
+      background-color: #fff;
+  }
+  tr:nth-child(even) td {
+      background-color: #f9f9f9;
+  }
+  .image-header {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto 20px;
+  }
+  .status-cell {
+      color: green;
+      font-weight: bold;
+  }
+  .half-implemented {
+      color: orange;
+      font-weight: bold;
+  }
+  .not-implemented {
+      color: red;
+      font-weight: bold;
+  }
+  .header-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa; /* Optional background for header */
+}
+.image-header {
+    max-width: 150px; /* Adjust the image size */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+.header-title {
+    font-size: 1.5em; /* Adjust title size */
+    margin-top: 10px; /* Space between image and title */
+    color: #333; /* Optional color for the title */
+}
+</style>
+<body>
+
+  <header id="header" class="header fixed-top d-flex align-items-center">
+ 
+
+    <nav class="header-nav ms-auto">
+     
+    </nav><!-- End Icons Navigation -->
+
+  </header>
+
+   
+<br><br>
+  <main>
+    <div class="container">
+
+      <div class="header-container">
+        <img src="assets/img/Adama municipal logo.jpg" alt="System Implementation Header" class="image-header">
+        <h1 class="header-title">System Implementation Status Report</h1>
+    </div>
+
+    <div class="table-responsive">
+        <table>
+            <thead>
+                <tr>
+                    <th>Office/Department</th>
+                    <th>Service in Number</th>
+                    <th>Fully Implemented Service</th>
+                    <th>Half Implemented Service</th>
+                    <th>Not Implemented Service</th>
+                    <th>Implementation Status</th>
+                    <th>Pending Actions (Owner)</th>
+                    <th>Challenges and Recommendations</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="status-cell">Mayor's Office</td>
+                    <td>15</td>
+                    <td>15</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="status-cell">Completed</td>
+                    <td>----</td>
+                    <td>Need more training for staff</td>
+                </tr>
+                <tr>
+                    <td class="status-cell">Municipal Office</td>
+                    <td>21</td>
+                    <td>
+                      5
+                      <!-- <p style="font-size: 0.8em; margin-top: 5px;">
+                          Namely:
+                          <ul style="margin: 0; padding-left: 15px;">
+                              <p>ID Related service (has 5 types),Condominiums house name change,  Renter agreements for government houses, Lifting of the prohibition and enforcement of prohibitions ,Housing questions  </p>
+                          </ul>
+                      </p> -->
+                  </td>
+                  
+                    <td>7</td>
+                    <td>9</td>
+                    <td class="half-implemented">Partially Implemented</td>
+                    <td>fulfilling the remaining form</td>
+                    <td>Appliying department to department communication</td>
+                </tr>
+                <tr>
+                    <td>Transport Office</td>
+                    <td>31</td>
+                    <td>31 but they are not using correctly</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="status-cell">Completed</td>
+                    <td>integration of internal system</td>
+                    <td>lack of need from emplooyee side, and they should be aware</td>
+                </tr>
+                <tr>
+                  <td>construction Office</td>
+                  <td>12</td>
+                  <td>6</td>
+                  <td>0</td>
+                  <td>6</td>
+                  <td class="half-implemented">Partially Implemented</td>
+                  <td>Should add the remaining service</td>
+                  <td>thy work flow is not work correctly </td>
+              </tr>
+              <tr>
+                <td>job creation  Office</td>
+                <td>7</td>
+                <td>7 but thier work flow is different from other office. currently they are working without thier work flow</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="half-implemented">Partially Implemented</td>
+                <td>Thier wor flow should be reviewed</td>
+                <td>employee needs trainning </td>
+            </tr>
+            <tr>
+              <td>police Office</td>
+              <td>6</td>
+              <td>0</td>
+              <td>0</td>
+              <td>6</td>
+              <td class="not-implemented">Not Implemented</td>
+              <td>traing issue</td>
+              <td>The police should be commanded by hiegher Authority</td>
+          </tr>
+          <tr>
+            <td>Civil registration Office</td>
+            <td>5</td>
+            <td>5</td>
+            <td>0</td>
+            <td>0</td>
+            <td class="status-cell">Completed</td>
+            <td>Taining and integration of the exsisting system </td>
+            <td>Need More training still</td>
+        </tr>
+        <tr>
+          <td>youth and sport Office</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td class="not-implemented">Not Implemented</td>
+          <td>should start</td>
+          <td>Null</td>
+      </tr>
+      <tr>
+        <td>Healty Office</td>
+        <td>9 some services are not included</td>
+        <td>9</td>
+        <td>0</td>
+        <td>0</td>
+        <td class="half-implemented">Partially Implemented</td>
+        <td>System not deployed yet</td>
+        <td>Delay in software release</td>
+    </tr>
+    <tr>
+      <td>manerial development Office</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td class="not-implemented">Not Implemented</td>
+      <td>To start Development</td>
+      <td> No Challange </td>
+  </tr>
+  <tr>
+    <td>Cooprative extension Office</td>
+    <td>5</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td class="not-implemented">Not Implemented</td>
+    <td>Services are included but forms are not done</td>
+    <td>Review of data again</td>
+</tr>
+<tr>
+  <td>Busa Gonofa Office extension Office</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td>0</td>
+  <td class="not-implemented">Not Implemented</td>
+  <td>null</td>
+  <td>null</td>
+</tr>
+
+                <tr>
+                    <td>Revenue Office</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="status-cell">Completed but not start</td>
+                    <td>working on network</td>
+                    <td>Network Challange</td>
+                </tr>
+                <tr>
+                    <td>Employee and Social Affairs Office</td>
+                    <td>18 but there is another service that is not inluded</td>
+                    <td>18</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="half-implemented">Partially Implemented</td>
+                    <td>adding The remaining service</td>
+                    <td> review the existing work flow</td>
+                </tr>
+                <tr>
+                  <td>Women and Children Affairs Office</td>
+                  <td>2 but there is another service that is not inluded</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="status-cell">Completed</td>
+                    <td>Optimize employee data processing</td>
+                    <td>Training for all department</td>
+                </tr>
+                <tr>
+                  <td>Environmental Protection Authority</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td class="not-implemented">Not Implemented</td>
+                  <td>review employee data processing</td>
+                  <td>null</td>
+              </tr>
+              <tr>
+                <td>Adama Water Supply Service Sewerage Enterprise office </td>
+                <td>10</td>
+                <td>10</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="status-cell">develpment Completed but not start </td>
+                <td>Optimize employee data processing</td>
+                <td>Training for all employee</td>
+            </tr>
+            <tr>
+              <td>Investment and Industry Office </td>
+              <td>7</td>
+              <td>3</td>
+              <td>4</td>
+              <td>0</td>
+              <td class="half-implemented">Partially Implemented</td>
+              <td>Optimize employee data processing</td>
+              <td>Training for all department</td>
+          </tr>
+
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
+  </div>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>ASTO</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+      Designed by <a href="https://portal.adamacity.gov.et/">ASTO</a>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
